@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form action="/api/posts/pict" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <input type="file" class="form-control-file" name="uploaded_file">
+        <!---<input type="text" class="form-control" placeholder="Number of speakers" nam="nspeakers">-->
+        <input type="submit" value="Get me the stats!" class="btn btn-default">            
+      </div>
+    </form>
+  </body>
+</html>
